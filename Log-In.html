@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>StayZone</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f3f3f3;
+    }
+    .container {
+      width: 100%;
+      max-width: 350px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+    .logo {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+    h3 {
+      margin: 10px 0 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .input_box {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    .input_box label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    .input_box input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    a.signup {
+      display: block;
+      margin-top: 15px;
+      padding: 10px;
+      background: #CD649C;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    a.signup:hover {
+      background: #b04d80;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Stray Kids Logo" class="logo">
+    <h3>Stray Kids Fansite</h3>
+    <form action="choose.html">
+      <div class="input_box">
+        <label>Username</label>
+        <input type="text" name="un" placeholder="Enter first name">
+      </div>
+      <div class="input_box">
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="Enter email address">
+      </div>
+      <div class="input_box">
+        <label>Password</label>
+        <input type="password" name="pword" placeholder="Enter new password">
+      </div>
+      <div class="input_box">
+        <label>Confirm Password</label>
+        <input type="password" name="confirm" placeholder="Repeat your password">
+      </div>
+      <div class="input_box">
+        <label>Date of Birth</label>
+        <input type="date" name="bday">
+      </div>
+      <a href="Homepage.html" class="signup">Sign Up</a>
+    </form>
+  </div>
+</body>
+</html>

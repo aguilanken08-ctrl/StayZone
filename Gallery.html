@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>StayZone</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+    }
+ 
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #CD649C;
+    }
+ 
+    nav img {
+      height: 60px;
+    }
+ 
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+ 
+    nav a:hover {
+      color: white;
+    }
+ 
+    h1 {
+      margin: 20px;
+    }
+ 
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+    }
+ 
+    .gallery img {
+      width: 300px;
+      height: auto;
+      margin: 10px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      transition: transform 0.5s ease;
+    }
+ 
+    .gallery img:first-child:hover {
+      transform: rotate(10deg) scale(1.1);
+    }
+ 
+    .gallery img:nth-child(2):hover {
+      transform: rotateY(30deg) translateZ(20px) scale(1.05);
+      transform-style: preserve-3d;
+    }
+ 
+    .gallery video {
+      width: 80%;
+      max-width: 600px;
+      margin: 20px auto 0;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      display: block;
+    }
+ 
+    footer {
+      text-align: center;
+      font-style: italic;
+      background-color: #CD649C;
+      padding: 1px 1px;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div style="display: flex; align-items: center;">
+      <img src="logo.png" alt="skz logo">
+      <h1>StayZone</h1>
+    </div>
+    <div>
+      <a href="Homepage.html">Home</a>
+      <a href="Members.html">Members</a>
+      <a href="albums.html">Albums</a>
+      <a href="gallery.html" style="color:white;">Gallery</a>
+    </div>
+  </nav>
+ 
+  <div class="gallery">
+    <img src="skz_2.jpg" alt="Stray Kids Image 1">
+    <img src="skz_3.jpg" alt="Stray Kids Image 2">
+    <img src="skz_4.jpg" alt="Stray Kids Image 3">
+    <video controls>
+      <source src="skz_vid.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+ 
+  <footer>
+    <p>Made with love by a STAY | Stray Kids everywhere all around the world 🌍</p>
+  </footer>
+</body>
+</html>
+ 
