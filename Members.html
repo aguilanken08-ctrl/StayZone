@@ -114,7 +114,7 @@
 		<br>
         <div class="members">
             <div class="member image">
-                <img src="bang chan.jpg" alt="Bang Chan" width="300px" height="300px">
+                <img src="bang chan.jpg" alt="Bang Chan" width="300px" height="300px" onclick="this.src='bang chan_2.jpg'">
             </div>
             <div class="member">
                 <p>
@@ -146,6 +146,9 @@
                     Representative Animal: Rabbit <br>
                     Facts: Former BTS backup dancer, loves cats. <br>
                 </p>
+				
+				<button id="colorBtn" onclick="revealColor()">Click to reveal his favorite color</button>
+				<p id="favColor" style="display:none; font-weight:bold;"></p>
             </div>
         </div>
 
@@ -161,14 +164,18 @@
                     Birthday: 08/11/1999 <br>
                     MBTI: ENFP <br>
                     Representative Animal: Pabbit <br>
-                    Facts: Member of 3RACHA as SPEARB. <br>
+                    <span id="binFacts">Facts: Member of 3RACHA as SPEARB. <br></span>
+					
+					<button onclick="document.getElementById('binFacts').style.display='none'">
+						Hide Facts
+					</button>
                 </p>
             </div>
         </div>
 
         <div class="members">
             <div class="member image">
-                <img src="hyunjin.jpg" alt="Hyunjin" width="300px">
+                <img src="hyunjin.jpg" alt="Hyunjin" width="300px" onclick="this.style.filter='grayscale(100%)'">
             </div>
             <div class="member">
                 <p>
@@ -233,7 +240,7 @@
 
         <div class="members">
             <div class="member image">
-                <img src="in.jpg" alt="I.N" width="300px">
+                <img src="jeongin.jpg" alt="I.N" width="300px" onclick="this.style.transform='rotate(90deg)'">
             </div>
             <div class="member">
                 <p>
@@ -254,3 +261,12 @@
 </body>
 
 </html>
+
+<script>
+function revealColor() {
+    document.getElementById("favColor").style.display = "block";
+    document.getElementById("favColor").innerHTML = "Favorite Color: Blue 💙";
+    document.getElementById("colorBtn").style.backgroundColor = "blue";
+    document.getElementById("colorBtn").style.color = "white";
+}
+</script>
